@@ -1,0 +1,35 @@
+{% extends 'main/index.html' %}
+{% load static %}
+{% block navbar-save %}
+
+{% endblock %}
+
+{% block about %}
+<ul class="elements">
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+    <li class="square"></li>
+</ul>
+<div class="sec-log">
+    <div class="container">
+        <div class="row">
+            <div class="col log-info">
+                <h1>Вход</h1>
+                <form action="" method="post" class="login">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

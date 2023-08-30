@@ -1,0 +1,10 @@
+{% extends 'main/index.html' %}
+{% block about %}
+<div class="publication">
+    <img src="{{ id_setting.image }}" alt="изображение" class="render_img"><br>
+    <font size="6">{{ id_setting.title }}</h2></font><br>
+    <span class="desc"><font color="gray">{{ id_setting.description }}</font></span><br>
+    <span class="date">Дата и время: {{ id_setting.date }}</span><br>
+    <span class="user">Опубликовал: {{ id_setting.user }}</span><br>
+</div>
+{% endblock %}
